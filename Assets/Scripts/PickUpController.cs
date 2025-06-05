@@ -8,11 +8,13 @@ public class PlayerPickup : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.X) && currentCollectable != null && !GameManager.instance.rovIsMoving)
         {
-            // Check for sample name
             CollectableItem item = currentCollectable.GetComponent<CollectableItem>();
             if (item != null)
             {
-                GameManager.instance.CheckCollected(item.sampleName);
+                GameManager.instance.CheckCollected(item.data.sampleName);
+
+                // Show the info slide
+                FindFirstObjectByType<SampleSlideUI>().ShowSlide(item.data);
             }
 
             Destroy(currentCollectable);
