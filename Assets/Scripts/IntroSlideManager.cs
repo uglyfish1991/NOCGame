@@ -8,13 +8,20 @@ public class IntroManager : MonoBehaviour
     public class IntroSlide
     {
         public Sprite image;
+        public string title;
+
+        [TextArea(3, 10)]
         public string message;
+        public string button;
     }
 
     public IntroSlide[] slides;
 
     public Image slideImage;
-    public TMP_Text slideText; // Or use TMP_Text
+
+    public TMP_Text titleText;
+    public TMP_Text bodyText;
+    public TMP_Text buttonText; 
     public GameObject introPanel;
 
     private int currentSlide = 0;
@@ -42,6 +49,8 @@ public class IntroManager : MonoBehaviour
     private void ShowSlide(int index)
     {
         slideImage.sprite = slides[index].image;
-        slideText.text = slides[index].message;
+        titleText.text = slides[index].title;
+        bodyText.text = slides[index].message;
+        buttonText.text = slides[index].button;
     }
 }
