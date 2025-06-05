@@ -4,8 +4,8 @@ using System.Collections;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] spawningElements;
-    public float spawnRangeX = 12f;
-    public float spawnY = 7f;
+    private float spawnRangeX = 6f;
+    private float spawnY = 7f;
     public float spawnInterval = 1.5f;
 
     void Start()
