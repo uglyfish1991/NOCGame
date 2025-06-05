@@ -12,7 +12,9 @@ public class GameManager : MonoBehaviour
     }
 
     public static GameManager instance;
-    public bool rovIsMoving = true; // Everything moves/spawns while true
+
+    public GameObject chosenItemsCanvas;
+    public bool rovIsMoving;// Everything moves/spawns while true
     public List<CollectibleSample> allCollectibles; // Assign in Inspector
     public List<CollectibleSample> chosenCollectibles = new List<CollectibleSample>();
     public List<string> collectedSampleNames = new List<string>();
@@ -37,10 +39,13 @@ public class GameManager : MonoBehaviour
 
     
 
-    void Start()
+    public void StartGame()
     {
         PickRandomCollectibles();
         DisplayTargets();
+        chosenItemsCanvas.SetActive(true);
+        rovIsMoving = true;
+        Debug.Log("Game started.");
     }
 
     void PickRandomCollectibles()
