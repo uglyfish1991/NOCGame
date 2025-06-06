@@ -9,6 +9,7 @@ public class SampleSlideUI : MonoBehaviour
     public TMP_Text sampleNameText;
     public TMP_Text descriptionText;
     public Button closeButton;
+     public GameObject winnerPanel;
 
     private void Start()
     {
@@ -29,6 +30,16 @@ public class SampleSlideUI : MonoBehaviour
     public void HideSlide()
     {
         panel.SetActive(false);
-        GameManager.instance.rovIsMoving = true; // Resume movement
+
+        if (GameManager.instance.gameIsWon)
+        {
+            winnerPanel.SetActive(true);
+            Debug.Log("Your slide would be called here maybe");
+        }
+        else
+        {
+            GameManager.instance.rovIsMoving = true; // Resume movement
+        }
+        
     }
 }

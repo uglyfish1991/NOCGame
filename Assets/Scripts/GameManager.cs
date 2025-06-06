@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject chosenItemsCanvas;
     public bool rovIsMoving;// Everything moves/spawns while true
+
+    public bool gameIsWon;
     public List<SampleData> allCollectibles; // <-- use SampleData here
     public List<SampleData> chosenCollectibles = new List<SampleData>();
     public List<string> collectedSampleNames = new List<string>();
@@ -88,6 +90,7 @@ public class GameManager : MonoBehaviour
 
                 if (collectedSampleNames.Count == 3)
                 {
+                    GameManager.instance.gameIsWon = true;
                     Debug.Log("All targets collected!");
                 }
                 return;
