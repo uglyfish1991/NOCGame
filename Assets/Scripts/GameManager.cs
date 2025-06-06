@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
@@ -15,8 +15,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject chosenItemsCanvas;
     public bool rovIsMoving;// Everything moves/spawns while true
-    public List<CollectibleSample> allCollectibles; // Assign in Inspector
-    public List<CollectibleSample> chosenCollectibles = new List<CollectibleSample>();
+    public List<SampleData> allCollectibles; // <-- use SampleData here
+    public List<SampleData> chosenCollectibles = new List<SampleData>();
     public List<string> collectedSampleNames = new List<string>();
 
     public Image[] uiTargets; // Assign 3 UI Image slots in Inspector
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    
+
 
     public void StartGame()
     {
@@ -52,12 +52,12 @@ public class GameManager : MonoBehaviour
     {
         chosenCollectibles.Clear();
 
-        List<CollectibleSample> tempList = new List<CollectibleSample>(allCollectibles);
+        List<SampleData> tempList = new List<SampleData>(allCollectibles);
         for (int i = 0; i < 3; i++)
         {
             int index = Random.Range(0, tempList.Count);
             chosenCollectibles.Add(tempList[index]);
-            tempList.RemoveAt(index); // prevents duplicates
+            tempList.RemoveAt(index);
         }
     }
 
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
         {
             if (i < chosenCollectibles.Count)
             {
-                uiTargets[i].sprite = chosenCollectibles[i].sampleIcon;
+                uiTargets[i].sprite = chosenCollectibles[i].sampleImage;
                 uiTargets[i].enabled = true;
             }
             else
@@ -86,11 +86,9 @@ public class GameManager : MonoBehaviour
                 collectedSampleNames.Add(collectedName);
                 Debug.Log("Collected target: " + collectedName);
 
-                // Optional: Update UI here
-
                 if (collectedSampleNames.Count == 3)
                 {
-                    Debug.Log("All targets collected! Ending game...");
+                    Debug.Log("All targets collected!");
                 }
                 return;
             }

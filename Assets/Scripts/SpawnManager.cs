@@ -4,6 +4,8 @@ using System.Collections;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] spawningElements;
+    public GameObject highlightEffectPrefab; // Drag your particle system prefab here
+
     private float spawnRangeX = 6f;
     private float spawnY = 7f;
     public float spawnInterval = 1.5f;
@@ -32,6 +34,17 @@ public class SpawnManager : MonoBehaviour
     {
         Vector2 spawnPos = new Vector2(Random.Range(-spawnRangeX, spawnRangeX), spawnY);
         int elementIndex = Random.Range(0, spawningElements.Length);
-        Instantiate(spawningElements[elementIndex], spawnPos, Quaternion.identity);
+        GameObject newObj = Instantiate(spawningElements[elementIndex], spawnPos, Quaternion.identity);
+
+        // Check if this is a target sample
+        CollectableItem item = newObj.GetComponent<CollectableItem>();
+        if (item != null && item.data != null)
+        {
+            if (GameManager.instance.chosenCollectibles.Contains(item.data))
+            {
+                GameObject fx = Instantiate(highlightEffectPrefab, newObj.transform);
+                fx.transform.localPosition = Vector3.zero; // center the FX on the sample
+            }
+        }
     }
 }
