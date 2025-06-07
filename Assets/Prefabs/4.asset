@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863f6850f5349643bca5acc0851effd, type: 3}
   m_Name: 4
   m_EditorClassIdentifier: 
-  sampleName: 4
-  sampleImage: {fileID: -4178046375966092550, guid: d160ce8d8fb06414c842b34f9cc876ec, type: 3}
-  description: whatever this is
+  sampleName: Bioluminescent Bacteria
+  sampleImage: {fileID: -984015360057829898, guid: 245f11e9d1d893947a168904e2a4fba0, type: 3}
+  description: Look! A colony of bioluminescent bacteria!\n\nSome bacteria can glow
+    in the dark using a special light called bioluminescence. These glowing bacteria
+    help some animals find food or stay safe. \n\nBy studying bioluminescent bacteria,
+    we can learn more about how deep-sea creatures communicate in the dark!

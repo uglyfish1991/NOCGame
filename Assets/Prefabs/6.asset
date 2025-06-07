@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863f6850f5349643bca5acc0851effd, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  sampleName: 6
-  sampleImage: {fileID: 3465286685962602723, guid: 1ce9c18cc65b4c24c9cc699029a959ef, type: 3}
-  description: siiiiiiiiiiiiiiiiiiiix
+  sampleName: Hydrothermal Vent Chimney
+  sampleImage: {fileID: 2198567718461609793, guid: a6be86333ed1c214cb7b4109458fdf1a, type: 3}
+  description: Amazing! You've found a hydrothermal vent chimney!\n\nHydrothermal
+    vent chimneys are tall, smoky towers on the seafloor that shoot out hot, mineral-rich
+    water. Strange animals live around them! \n\nBy studying hydrothermal vent chimneys,
+    we can learn more about how life survives without sunlight, deep in the ocean!

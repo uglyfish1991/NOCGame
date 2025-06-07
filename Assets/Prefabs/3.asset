@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863f6850f5349643bca5acc0851effd, type: 3}
   m_Name: 3
   m_EditorClassIdentifier: 
-  sampleName: Starfish
-  sampleImage: {fileID: -6470460504253458178, guid: 1d29bcde1902b0347b0d4a10c69f244f, type: 3}
-  description: A starfish
+  sampleName: Basalt Pillow Lava
+  sampleImage: {fileID: -6707944736470963649, guid: 9848d38587e794641a190bd8aa4352d3, type: 3}
+  description: "Incredible! A chunk of basalt pillow lava! \\n\\nBasalt pillow lava
+    forms when hot lava meets cold ocean water, making round, pillow-like shapes.
+    It\u2019s a sign of underwater volcanoes! \\n\\nBy studying basalt pillow lava,
+    we can learn more about how the Earth\u2019s crust forms under the sea!"

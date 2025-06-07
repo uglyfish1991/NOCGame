@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2789858400135900850}
   - component: {fileID: 2082447013223625558}
   - component: {fileID: 9000203753608311578}
+  - component: {fileID: -157805263052001194}
   m_Layer: 0
   m_Name: Fish2
   m_TagString: Untagged
@@ -78,10 +79,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -2114686101538272709, guid: 8dff9d0ce56c7a34fbc4f95cb344634a, type: 3}
+  m_Sprite: {fileID: 9003041106171222043, guid: 9069c2539a465da4b9dafe78db095806, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 1.19, y: 1.94}
   m_AdaptiveModeThreshold: 0.5
@@ -113,4 +114,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3914c14e89e60b49a08e7a12061049a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2.3
+  moveSpeed: 3.19
+--- !u!114 &-157805263052001194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5035516253236571725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.9019608}
+  m_EffectDistance: {x: 2.24, y: 5.88}
+  m_UseGraphicAlpha: 1

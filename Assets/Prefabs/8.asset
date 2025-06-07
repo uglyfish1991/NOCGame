@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863f6850f5349643bca5acc0851effd, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
-  sampleName: 8
-  sampleImage: {fileID: 8288426215254106694, guid: 2932d5b3005af1e4caf89c8a305a2295, type: 3}
-  description: ate
+  sampleName: Pumice
+  sampleImage: {fileID: -2200801526241766643, guid: 2760cbaa11b8ab4448225b5dc66844d9, type: 3}
+  description: "What a great pumice sample!\\n\\nPumice is a super-light rock that
+    can float on water! It\u2019s made during explosive volcanic eruptions. \\n\\nBy
+    studying pumice, we can learn more about volcanoes and how rocks can travel across
+    oceans!"

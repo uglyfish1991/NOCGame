@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863f6850f5349643bca5acc0851effd, type: 3}
   m_Name: 10
   m_EditorClassIdentifier: 
-  sampleName: 10
-  sampleImage: {fileID: -5099292496197868168, guid: 2b98ce5557ca87f4191130cee0c4395a, type: 3}
-  description: t'int in tin
+  sampleName: Sulphide Deposit
+  sampleImage: {fileID: -3552668696117675437, guid: 3de720e6ff300614abe4049384e7239c, type: 3}
+  description: I can't wait to analyse this sulphide deposit!\n\nSulphide deposits
+    are piles of shiny, dark minerals that form near hydrothermal vents. They contain
+    metals like copper and gold. \n\nBy studying sulphide deposits, we can learn
+    more about where important metals come from and how they form under the sea!

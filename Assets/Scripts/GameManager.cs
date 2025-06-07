@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -70,6 +71,7 @@ public class GameManager : MonoBehaviour
             if (i < chosenCollectibles.Count)
             {
                 uiTargets[i].sprite = chosenCollectibles[i].sampleImage;
+                uiTargets[i].preserveAspect = true;
                 uiTargets[i].enabled = true;
             }
             else
@@ -81,12 +83,20 @@ public class GameManager : MonoBehaviour
 
     public void CheckCollected(string collectedName)
     {
-        foreach (var target in chosenCollectibles)
+        for (int i = 0; i < chosenCollectibles.Count; i++)
         {
+            var target = chosenCollectibles[i];
             if (target.sampleName == collectedName && !collectedSampleNames.Contains(collectedName))
             {
                 collectedSampleNames.Add(collectedName);
                 Debug.Log("Collected target: " + collectedName);
+
+                // Show tick overlay on the corresponding UI image
+                Transform tick = uiTargets[i].transform.Find("TickOverlay");
+                if (tick != null)
+                {
+                    tick.gameObject.SetActive(true);
+                }
 
                 if (collectedSampleNames.Count == 3)
                 {
@@ -96,5 +106,10 @@ public class GameManager : MonoBehaviour
                 return;
             }
         }
+    }
+
+    public void PlayGameAgain()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

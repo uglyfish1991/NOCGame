@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863f6850f5349643bca5acc0851effd, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  sampleName: Coral
-  sampleImage: {fileID: -855298285791758126, guid: 11af9ab44a636004daeec6bb3228ac2f, type: 3}
-  description: Some Coral
+  sampleName: Amphipod Swarm
+  sampleImage: {fileID: 21300000, guid: 34e67d15dea99f3439823238acc20252, type: 3}
+  description: "You've picked up an amphipod swarm!\\n\\nAmphipods are tiny shrimp-like
+    creatures that swim together in big groups called swarms. Even though they\u2019re
+    small, they\u2019re very important in the ocean food chain. \\n\\nBy studying
+    amphipod swarms, we can learn more about how deep-sea animals find food and survive
+    in the dark ocean!"

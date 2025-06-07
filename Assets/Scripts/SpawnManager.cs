@@ -34,7 +34,8 @@ public class SpawnManager : MonoBehaviour
     {
         Vector2 spawnPos = new Vector2(Random.Range(-spawnRangeX, spawnRangeX), spawnY);
         int elementIndex = Random.Range(0, spawningElements.Length);
-        GameObject newObj = Instantiate(spawningElements[elementIndex], spawnPos, Quaternion.identity);
+        Quaternion randomRotation = Quaternion.Euler(0, 0, Random.Range(0f, 360f));
+        GameObject newObj = Instantiate(spawningElements[elementIndex], spawnPos, randomRotation);
 
         // Check if this is a target sample
         CollectableItem item = newObj.GetComponent<CollectableItem>();
@@ -42,8 +43,10 @@ public class SpawnManager : MonoBehaviour
         {
             if (GameManager.instance.chosenCollectibles.Contains(item.data))
             {
+                // GameObject fx = Instantiate(highlightEffectPrefab, newObj.transform);
                 GameObject fx = Instantiate(highlightEffectPrefab, newObj.transform);
-                fx.transform.localPosition = Vector3.zero; // center the FX on the sample
+                fx.transform.localPosition = Vector3.zero;
+                fx.transform.rotation = Quaternion.identity; // Ensures upright particles
             }
         }
     }

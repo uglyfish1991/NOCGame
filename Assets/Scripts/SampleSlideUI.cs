@@ -29,11 +29,11 @@ public class SampleSlideUI : MonoBehaviour
 
     if (isTarget)
     {
-        extraMessageText.text = "Well done! This was one of your target items.";
+        extraMessageText.text = "Well done! This was one of your target items!";
     }
     else
     {
-        extraMessageText.text = "This was not one of your targets.";
+        extraMessageText.text = "This was not one of your targets. Let's put it back safely!";
     }
 
         panel.SetActive(true);
@@ -47,6 +47,7 @@ public class SampleSlideUI : MonoBehaviour
         if (GameManager.instance.gameIsWon)
         {
             winnerPanel.SetActive(true);
+            GameManager.instance.chosenItemsCanvas.SetActive(false);
             Debug.Log("Your slide would be called here maybe");
         }
         else

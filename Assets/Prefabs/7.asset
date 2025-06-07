@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863f6850f5349643bca5acc0851effd, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  sampleName: 7
-  sampleImage: {fileID: 7028616704906629411, guid: 663ff7598c29233459036dfb9540b402, type: 3}
-  description: seven
+  sampleName: Iron Oxide Mat
+  sampleImage: {fileID: 6712226713053624785, guid: 9377a9dd14b6b6442828857745c6d87f, type: 3}
+  description: "You found some iron oxide mat!\\n\\nIron oxide mats are reddish or
+    orange patches made by bacteria that \u201Ceat\u201D iron. They look like rust
+    on the seafloor! \\n\\nBy studying iron oxide mats, we can learn more about ancient
+    Earth and even how life might exist on other planets!"

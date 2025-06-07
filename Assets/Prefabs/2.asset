@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b863f6850f5349643bca5acc0851effd, type: 3}
   m_Name: 2
   m_EditorClassIdentifier: 
-  sampleName: Slime
-  sampleImage: {fileID: 6937817954938267909, guid: 5fc80641d9930604aabb3bfbdf9b5a20, type: 3}
-  description: Some slimy slime
+  sampleName: Bacterial Mat
+  sampleImage: {fileID: 6721003328867267560, guid: a653c475449c4794699e50bd2aa33b4c, type: 3}
+  description: "You've grabbed a piece of bacterial mat!\\n\\nBacterial mats look
+    like colorful carpets on the seafloor. They\u2019re made of millions of tiny
+    bacteria living close together. \\n\\nBy studying bacterial mats, we can learn
+    more about how life can survive in places without sunlight!"

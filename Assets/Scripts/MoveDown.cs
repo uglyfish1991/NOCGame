@@ -7,7 +7,7 @@ public class MoveDown : MonoBehaviour
     void Update()
     {
         if (GameManager.instance.rovIsMoving){
-        transform.Translate(Vector3.down * moveSpeed * Time.deltaTime); // Move down
+        transform.Translate(Vector3.down * moveSpeed * Time.deltaTime, Space.World); // move down in world space otherwise they go off on whatever their rotation is
         }
     }
 }
