@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2966ce8590b5d7e4d8ad5293441bacbe
+guid: c8fc443b0f7928f4389b055d784dd18a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2104901783972924173
-    second: Crab_0
+      213: 8991060405456374093
+    second: Hydrothermal_Vent_Chimney_New_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Crab_0
+      name: Hydrothermal_Vent_Chimney_New_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 18
-        width: 220
-        height: 142
+        x: 31
+        y: 0
+        width: 89
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0bcac0350d163d10800000000000000
-      internalID: 2104901783972924173
+      spriteID: d498e455dc9a6cc70800000000000000
+      internalID: 8991060405456374093
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 452eef14eeb6faf4cb5d3e590e3150e6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Crab_0: 2104901783972924173
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

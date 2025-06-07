@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public GameObject chosenItemsCanvas;
+    public float movementMultiplier = 1f; // Will lerp between 0 and 1
+    public float smoothSpeed = 2f;
     public bool rovIsMoving;// Everything moves/spawns while true
 
     public bool gameIsWon;
@@ -29,6 +31,9 @@ public class GameManager : MonoBehaviour
             instance = this;
         else
             Destroy(gameObject);
+
+        rovIsMoving = false;  //Ensure movement is OFF at game load
+        movementMultiplier = 0f; 
     }
 
     void Update()
@@ -38,6 +43,10 @@ public class GameManager : MonoBehaviour
             rovIsMoving = !rovIsMoving;
             Debug.Log("ROV movement toggled: " + (rovIsMoving ? "RESUMED" : "PAUSED"));
         }
+
+        // Smooth transition of movementMultiplier
+        float target = rovIsMoving ? 1f : 0f;
+        movementMultiplier = Mathf.MoveTowards(movementMultiplier, target, smoothSpeed * Time.deltaTime);
     }
 
 
