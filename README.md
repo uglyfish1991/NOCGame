@@ -1,4 +1,4 @@
-#Seafloor Scramble
+# Seafloor Scramble
 
 Seafloor scramble is my first Unity game made outside of my Unity Bootcamp. It is an educational game, based on controlling the National Oceanography Centre's ROV Isis to pick up the requested samples from the sea floor. 
 
