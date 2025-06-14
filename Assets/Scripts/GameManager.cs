@@ -66,7 +66,6 @@ public class GameManager : MonoBehaviour
             rovIsMoving = !rovIsMoving;
             Debug.Log("ROV movement toggled: " + (rovIsMoving ? "RESUMED" : "PAUSED"));
         }
-
         //¬|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
         //¬|This manages the "smoother movement" of the ROV, when it was just harsh start/stop in     |
         //¬|earlier versions. Ternary operator - one line if/else. (if rovIM==true, movement = 1)     |
@@ -76,12 +75,10 @@ public class GameManager : MonoBehaviour
         //¬|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
         //¬|REMEMBER - this happens once per frame!!!!!                                               |
         //¬|Mathf.MoveTowards increments towards whatever the movementMultiplier is step by step.     |
-        //¬|It doesn't take long at all - but works very well.                                        |         
+        //¬|It doesn't take long at all - but works very well. Other scripts reference this value.    |         
         //¬|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
         movementMultiplier = Mathf.MoveTowards(movementMultiplier, target, smoothSpeed * Time.deltaTime);
     }
-
-
 
     public void StartGame()
     {
