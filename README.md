@@ -4,9 +4,10 @@ Seafloor scramble is my first Unity game made outside of my Unity Bootcamp. It i
 
 The game is to demonstrate **how technology is used to help support conservation**, and **what insights do we get from studying these samples** - it's not necessarily about what creatures or samples are down in the deep ocean.
 
+It is still a work in progress. ==There is still a lot of work to be done.==
+
 Artwork was by DigiDemi
 
-It is still a work in progress. ==There is still a lot of work to be done.==
 ---
 ## To - Do List (Improvements)
 
